@@ -6,13 +6,13 @@
   <title>Study Meeting GMKI Ternate</title>
   <style>
     :root {
-      --bg: #F5F7FA;
+      --bg: #F4F7FA;
       --card: #FFFFFF;
       --primary: #004AAD;
       --accent: #16C79A;
-      --muted: #64748B;
       --text: #1E293B;
-      --radius: 16px;
+      --muted: #6B7280;
+      --radius: 18px;
     }
     body {
       font-family: 'Inter', sans-serif;
@@ -27,34 +27,62 @@
     header.hero {
       background: linear-gradient(135deg, var(--primary), var(--accent));
       color: white;
-      padding: 40px 28px;
-      border-radius: 18px;
+      padding: 50px 30px;
+      border-radius: var(--radius);
       text-align: center;
       box-shadow: 0 6px 24px rgba(0,0,0,0.2);
     }
-    header.hero h1 {font-size: 34px; margin: 0; font-weight: 800;}
-    header.hero .author {margin-top:10px; font-size:16px; font-weight:600; color: rgba(255,255,255,0.95)}
+    header.hero h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    header.hero .author {
+      font-size: 17px;
+      opacity: 0.95;
+      font-weight: 600;
+    }
     .card {
       background: var(--card);
       border-radius: var(--radius);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-      padding: 30px;
-      margin-top: 30px;
+      box-shadow: 0 8px 26px rgba(0,0,0,0.08);
+      padding: 36px;
+      margin-top: 35px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .card h2 {color: var(--primary); font-size: 20px; margin-top: 0;}
-    .card p {font-size: 15px; line-height: 1.7; color: #374151; white-space: pre-line;}
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+    .card h2 {
+      color: var(--primary);
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    .card p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--text);
+      white-space: pre-line;
+    }
+    .card ul {
+      margin: 12px 0 20px 20px;
+      color: var(--text);
+    }
+    .card ul li {
+      margin-bottom: 8px;
+    }
     .card img {
       width: 100%;
-      border-radius: 12px;
-      margin-top: 15px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      border-radius: 14px;
+      margin-top: 20px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
     }
     footer {
       text-align: center;
-      margin-top: 50px;
+      margin-top: 60px;
       color: var(--muted);
-      font-size: 13px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -71,9 +99,7 @@
 
 Sebelum masuk pada implikasi ekonomi tersebut, penting untuk menegaskan bahwa dalam dinamika percepatan ekonomi daerah, pemerintah saat ini memberi perhatian khusus pada sektor pertanian dan ketahanan pangan. Ini merupakan fondasi keberlanjutan sosial jangka panjang.
 
-Mengapa sektor pertanian? Karena ketergantungan pangan dari luar daerah masih tinggi, biaya logistik mempengaruhi harga kebutuhan pokok, dan kemampuan rumah tangga untuk mengakses pangan bergizi menjadi kunci kualitas manusia Maluku Utara. Data lapangan menunjukkan program penambahan area tanam padi gogo, padi sawah melalui APBD dan APBN, serta jagung, hingga perluasan areal pangan bersama TNI dan pemerintah pusat. Upaya ke depan termasuk irigasi desa, benih unggul lokal, mekanisasi alat, dan penguatan lumbung pangan kampung serta koperasi tani.
-
-Dengan landasan prioritas pangan ini, kita masuk ke tema utama: pertumbuhan ekonomi Maluku Utara 32% dan implikasinya.</p>
+Mengapa sektor pertanian? Karena ketergantungan pangan dari luar daerah masih tinggi, biaya logistik mempengaruhi harga kebutuhan pokok, dan kemampuan rumah tangga untuk mengakses pangan bergizi menjadi kunci kualitas manusia Maluku Utara. Data lapangan menunjukkan program penambahan area tanam padi gogo, padi sawah melalui APBD dan APBN, serta jagung, hingga perluasan areal pangan bersama TNI dan pemerintah pusat. Upaya ke depan termasuk irigasi desa, benih unggul lokal, mekanisasi alat, dan penguatan lumbung pangan kampung serta koperasi tani.</p>
     </div>
 
     <div class="card">
@@ -88,17 +114,59 @@ Impliksinya dari struktur pertumbuhan adalah:
 • potensi pertumbuhan harus dikelola agar menghasilkan spillover effect bagi ekonomi rakyat.
 
 Dengan kata lain, tugas pemerintah adalah mengkonversi pertumbuhan menjadi kesejahteraan, bukan sekadar mencatat kinerja makro.</p>
-      <img src="torr.png" alt="Pertumbuhan Ekonomi Visual">
+      <img src="study_meeting_visual.png" alt="Visual Pertumbuhan Ekonomi">
     </div>
 
     <div class="card">
       <h2>Implikasi Terhadap Tata Kelola Keuangan Daerah (APBD)</h2>
-      <p>Di tengah pertumbuhan tinggi, tata kelola fiskal daerah diarahkan pada:
-• efektivitas belanja publik, bukan sekadar besar anggaran;
-• prioritas pada pelayanan dasar: pendidikan, kesehatan, gizi keluarga, air, dan infrastruktur lokal;
-• penguatan kapasitas fiskal melalui optimalisasi PAD tanpa membebani rakyat kecil;
-• penataan kebijakan pengawasan & transparansi agar keuangan daerah akuntabel;
-• strategi belanja produktif yang mendorong aktivitas ekonomi lokal dan daya beli masyarakat.</p>
+      <p>Di tengah pertumbuhan tinggi, tata kelola fiskal daerah diarahkan pada:</p>
+      <ul>
+        <li>efektivitas belanja publik, bukan sekadar besar anggaran;</li>
+        <li>prioritas pada pelayanan dasar: pendidikan, kesehatan, gizi keluarga, air, dan infrastruktur lokal;</li>
+        <li>penguatan kapasitas fiskal melalui optimalisasi PAD tanpa membebani rakyat kecil;</li>
+        <li>penataan kebijakan pengawasan & transparansi agar keuangan daerah akuntabel;</li>
+        <li>strategi belanja produktif yang mendorong aktivitas ekonomi lokal dan daya beli masyarakat.</li>
+      </ul>
+      <p>Dalam konteks tata kelola tersebut, perlu disampaikan bahwa prinsip-prinsip pengelolaan APBD yang berorientasi pada pertumbuhan ekonomi, pembukaan lapangan kerja, dan pengurangan kemiskinan sesungguhnya telah berjalan di Maluku Utara. Pendekatan ini diterjemahkan ke dalam kebijakan nyata, termasuk pada sektor pertanian sebagai sektor prioritas melalui penambahan luas tanam, dukungan sarana produksi, pemberdayaan petani, dan penciptaan rantai ekonomi desa yang mampu memberikan nilai tambah serta peluang kerja bagi masyarakat lokal. Dengan demikian, arah fiskal daerah tidak hanya mengikuti prinsip pembangunan fiskal modern, tetapi juga memastikan asas keadilan dan keberlanjutan di akar rumput.
+
+APBD dalam konteks ini berfungsi sebagai alat distribusi manfaat pertumbuhan, bukan sekadar daftar kegiatan tahunan.</p>
+    </div>
+
+    <div class="card">
+      <h2>Dampak pada Kesejahteraan Masyarakat</h2>
+      <p>Kesejahteraan rakyat menjadi indikator nyata. Karena itu, langkah strategis diarahkan pada:</p>
+      <ul>
+        <li>pengurangan ketimpangan antarwilayah;</li>
+        <li>penguatan UMKM & ekonomi pedesaan;</li>
+        <li>pemerataan akses layanan publik;</li>
+        <li>intervensi gizi & kesehatan keluarga;</li>
+        <li>peningkatan kualitas tenaga kerja lokal agar terserap di industri;</li>
+        <li>perlindungan sosial kelompok rentan.</li>
+      </ul>
+      <p>Dengan demikian, pertumbuhan bukan hanya naik di grafik, tetapi hadir di meja makan rakyat dan masa depan anak-anak di Maluku Utara.</p>
+    </div>
+
+    <div class="card">
+      <h2>Peran GMKI & Pemuda</h2>
+      <p>GMKI memiliki posisi moral, intelektual, dan sosial dalam dinamika ini. Ruang kontribusi pemuda meliputi:</p>
+      <ul>
+        <li>menjadi suara kritis namun solutif dalam kebijakan publik;</li>
+        <li>riset dan literasi publik mengenai pembangunan daerah;</li>
+        <li>pendampingan desa & pemberdayaan petani muda;</li>
+        <li>inovasi kewirausahaan pangan dan ekonomi digital;</li>
+        <li>membangun jejaring lintas gereja–kampus–pemerintah;</li>
+        <li>mewujudkan kepemimpinan humanis yang melayani.</li>
+      </ul>
+      <p>GMKI bukan hanya pengamat, tetapi mitra pembangunan yang memegang kompas etika dan kecerdasan sosial.</p>
+    </div>
+
+    <div class="card">
+      <h2>Penutup</h2>
+      <p>Pertumbuhan ekonomi 32% adalah peluang besar bagi Maluku Utara. Tantangannya adalah bagaimana menjadikannya nilai nyata bagi rakyat — melalui tata kelola keuangan yang efektif, kebijakan publik yang inklusif, dan prioritas pembangunan pada sektor yang menyentuh kehidupan masyarakat, terutama ketahanan pangan dan pertanian.
+
+Sementara itu, pemuda — khususnya GMKI — bukan hanya pewaris masa depan, tetapi penggerak perubahan hari ini. Kolaborasi, kesadaran kritis, dan semangat pelayanan menjadi kunci untuk memastikan Maluku Utara tumbuh bukan hanya cepat, tetapi adil, kuat, dan bermartabat.
+
+Terima kasih.</p>
     </div>
 
     <footer>© 2025 Study Meeting GMKI Ternate — Desain oleh GPT-5</footer>
